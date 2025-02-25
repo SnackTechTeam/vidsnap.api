@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vidsnap.api", "infra.web-api\vidsnap.api\vidsnap.api.csproj", "{2B04E449-1158-401D-9DC1-BF32D2AC65CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra.web-api", "infra.web-api", "{B79EB762-122D-4B1F-9DFE-F2A502FA8480}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C7C2E7F2-0386-4642-9126-9A54F29F73EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vidsnap.common", "common\Vidsnap.Common\vidsnap.common.csproj", "{E6FB7C8F-798F-497E-8EAF-277878E426D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vidsnap.core", "core\Vidsnap.Core\vidsnap.core.csproj", "{EAC67EFA-F57F-468E-944C-6C7A2457BB7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{8A3D24F4-FB37-44A7-8643-CB49C5CE0980}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra.persistence", "infra.persistence", "{C4990A2F-6F29-4D14-9CD4-85939916AC8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vidsnap.database", "infra.persistence\Vidsnap.Database\vidsnap.database.csproj", "{59E501C0-BC1F-459A-8841-E42769B9EB9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B04E449-1158-401D-9DC1-BF32D2AC65CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B04E449-1158-401D-9DC1-BF32D2AC65CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B04E449-1158-401D-9DC1-BF32D2AC65CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B04E449-1158-401D-9DC1-BF32D2AC65CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6FB7C8F-798F-497E-8EAF-277878E426D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FB7C8F-798F-497E-8EAF-277878E426D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FB7C8F-798F-497E-8EAF-277878E426D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FB7C8F-798F-497E-8EAF-277878E426D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC67EFA-F57F-468E-944C-6C7A2457BB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC67EFA-F57F-468E-944C-6C7A2457BB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC67EFA-F57F-468E-944C-6C7A2457BB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC67EFA-F57F-468E-944C-6C7A2457BB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E501C0-BC1F-459A-8841-E42769B9EB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E501C0-BC1F-459A-8841-E42769B9EB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E501C0-BC1F-459A-8841-E42769B9EB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E501C0-BC1F-459A-8841-E42769B9EB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B04E449-1158-401D-9DC1-BF32D2AC65CD} = {B79EB762-122D-4B1F-9DFE-F2A502FA8480}
+		{B79EB762-122D-4B1F-9DFE-F2A502FA8480} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C7C2E7F2-0386-4642-9126-9A54F29F73EA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E6FB7C8F-798F-497E-8EAF-277878E426D5} = {C7C2E7F2-0386-4642-9126-9A54F29F73EA}
+		{EAC67EFA-F57F-468E-944C-6C7A2457BB7E} = {8A3D24F4-FB37-44A7-8643-CB49C5CE0980}
+		{8A3D24F4-FB37-44A7-8643-CB49C5CE0980} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C4990A2F-6F29-4D14-9CD4-85939916AC8B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{59E501C0-BC1F-459A-8841-E42769B9EB9B} = {C4990A2F-6F29-4D14-9CD4-85939916AC8B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {446F03D1-A079-4F52-8001-5232302AE927}
+	EndGlobalSection
+EndGlobal
