@@ -4,9 +4,16 @@ using Vidsnap.Core.Domain.Entities;
 
 namespace Vidsnap.Core.Gateways;
 
-internal class VideoGateway(IVideoDataSource dataSource)
+internal class VideoGateway
 {
-    internal async Task<Video?> InserirVideoAsync(Video videoNovo)
+    private readonly IVideoDataSource dataSource;
+
+    public VideoGateway(IVideoDataSource dataSource)
+    {
+        this.dataSource = dataSource;
+    }
+
+    internal async Task<bool> InserirVideoAsync(Video videoNovo)
     {
         var dto = ConverterParaDto(videoNovo);
         return await dataSource.InserirVideoAsync(dto);

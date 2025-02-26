@@ -1,30 +1,32 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-# This stage is used when running from VS in fast mode (Default for Debug configuration)
+# Etapa base para runtime
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-USER $APP_UID
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
-
-# This stage is used to build the service project
+# Etapa de build
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Vidsnap.API/Vidsnap.API.csproj", "Vidsnap.API/"]
-RUN dotnet restore "./Vidsnap.API/Vidsnap.API.csproj"
-COPY . .
-WORKDIR "/src/Vidsnap.API"
+
+# Copiar os arquivos .csproj e restaurar as dependências
+COPY common/Vidsnap.Common/Vidsnap.Common.csproj common/Vidsnap.Common/
+COPY core/Vidsnap.Core/Vidsnap.Core.csproj core/Vidsnap.Core/
+COPY infra.persistence/Vidsnap.Database/Vidsnap.Database.csproj infra.persistence/Vidsnap.Database/
+COPY infra.web-api/Vidsnap.API/Vidsnap.API.csproj infra.web-api/Vidsnap.API/
+RUN dotnet restore infra.web-api/Vidsnap.API/Vidsnap.API.csproj
+
+# Copiar o restante do código e compilar
+COPY . ./
+WORKDIR "/src/infra.web-api/Vidsnap.API"
 RUN dotnet build "./Vidsnap.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# This stage is used to publish the service project to be copied to the final stage
+# Etapa de publicação
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./Vidsnap.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
+# Etapa final para execução
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=publish /app/publish ./
 ENTRYPOINT ["dotnet", "Vidsnap.API.dll"]

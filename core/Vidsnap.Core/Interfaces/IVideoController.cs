@@ -3,7 +3,7 @@ using Vidsnap.Common.Dto.DataSource;
 
 namespace Vidsnap.Core.Interfaces;
 
-public interface IVideoUploaderController
+public interface IVideoController
 {
     Task<ResultadoOperacao<VideoDto>> CadastrarNovoVideo(VideoSemIdDto novoVideo);
 }

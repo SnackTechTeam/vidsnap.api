@@ -8,9 +8,9 @@ namespace Vidsnap.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class VideoUploaderController(
-    ILogger<VideoUploaderController> logger,
-    IVideoUploaderController videoUploaderController) : CustomBaseController(logger)
+public class VideoController(
+    ILogger<VideoController> logger,
+    IVideoController videoController) : CustomBaseController(logger)
 {
     [HttpPost]
     [Consumes(MediaTypeNames.Application.Json)]
@@ -20,6 +20,6 @@ public class VideoUploaderController(
     [SwaggerOperation(Summary = "Cadastra um novo vídeo no sistema")]
     public async Task<IActionResult> Post([FromBody] VideoSemIdDto novoVideo)
     {
-        return await ExecucaoPadrao("Video.Post", videoUploaderController.UploadVideo(novoVideo));
+        return await ExecucaoPadrao("Video.Post", videoController.CadastrarNovoVideo(novoVideo));
     }
 }

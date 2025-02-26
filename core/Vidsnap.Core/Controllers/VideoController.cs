@@ -7,7 +7,7 @@ using Vidsnap.Core.UseCases;
 
 namespace Vidsnap.Core.Controllers;
 
-public class VideoUploaderController(IVideoDataSource videoDataSource) : IVideoUploaderController
+public class VideoController(IVideoDataSource videoDataSource) : IVideoController
 {
     public async Task<ResultadoOperacao<VideoDto>> CadastrarNovoVideo(VideoSemIdDto videoSemIdDto)
     {
