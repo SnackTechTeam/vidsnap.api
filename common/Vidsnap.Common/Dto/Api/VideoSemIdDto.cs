@@ -1,4 +1,4 @@
-﻿namespace vidsnap.common.Dto.Api;
+﻿namespace Vidsnap.Common.Dto.Api;
 
 public class VideoSemIdDto
 {

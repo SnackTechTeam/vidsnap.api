@@ -1,6 +1,6 @@
-﻿using vidsnap.common.Dto.Api;
+﻿using Vidsnap.Common.Dto.Api;
 
-namespace vidsnap.core.Presenters;
+namespace Vidsnap.Core.Presenters;
 
 internal static class GeralPresenter
 {

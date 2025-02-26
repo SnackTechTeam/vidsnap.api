@@ -1,4 +1,4 @@
-﻿namespace vidsnap.database.Entities;
+﻿namespace Vidsnap.Database.Entities;
 
 public class Video
 {

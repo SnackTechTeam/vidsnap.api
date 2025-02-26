@@ -1,8 +1,8 @@
-﻿using vidsnap.common.Dto.Api;
-using vidsnap.common.Dto.DataSource;
-using vidsnap.core.Domain.Entities;
+﻿using Vidsnap.Common.Dto.Api;
+using Vidsnap.Common.Dto.DataSource;
+using Vidsnap.Core.Domain.Entities;
 
-namespace vidsnap.core.Presenters;
+namespace Vidsnap.Core.Presenters;
 
 internal static class VideoPresenter
 {

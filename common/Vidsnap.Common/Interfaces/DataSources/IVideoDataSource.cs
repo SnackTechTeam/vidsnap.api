@@ -1,6 +1,6 @@
-﻿using vidsnap.common.Dto.DataSource;
+﻿using Vidsnap.Common.Dto.DataSource;
 
-namespace vidsnap.common.Interfaces.DataSources;
+namespace Vidsnap.Common.Interfaces.DataSources;
 
 public interface IVideoDataSource
 {

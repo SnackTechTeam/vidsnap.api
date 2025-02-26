@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using vidsnap.api.CustomResponses;
-using vidsnap.common.Dto.Api;
+using Vidsnap.API.CustomResponses;
+using Vidsnap.Common.Dto.Api;
 
-namespace vidsnap.api.Controllers;
+namespace Vidsnap.API.Controllers;
 
 public abstract class CustomBaseController(ILogger logger) : ControllerBase
 {

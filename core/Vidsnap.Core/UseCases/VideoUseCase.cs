@@ -1,10 +1,10 @@
-﻿using vidsnap.common.Dto.Api;
-using vidsnap.common.Dto.DataSource;
-using vidsnap.core.Domain.Entities;
-using vidsnap.core.Gateways;
-using vidsnap.core.Presenters;
+﻿using Vidsnap.Common.Dto.Api;
+using Vidsnap.Common.Dto.DataSource;
+using Vidsnap.Core.Domain.Entities;
+using Vidsnap.Core.Gateways;
+using Vidsnap.Core.Presenters;
 
-namespace vidsnap.core.UseCases;
+namespace Vidsnap.Core.UseCases;
 
 internal static class VideoUseCase
 {

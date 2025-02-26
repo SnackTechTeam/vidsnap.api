@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
-using vidsnap.database.Entities;
+using Vidsnap.Database.Entities;
 
-namespace vidsnap.database.Context;
+namespace Vidsnap.Database.Context;
 
 [ExcludeFromCodeCoverage]
 public class RepositoryDbContext(DbContextOptions options) : DbContext(options)

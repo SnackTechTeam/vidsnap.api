@@ -1,8 +1,8 @@
-﻿using vidsnap.common.Dto.DataSource;
-using vidsnap.common.Interfaces.DataSources;
-using vidsnap.core.Domain.Entities;
+﻿using Vidsnap.Common.Dto.DataSource;
+using Vidsnap.Common.Interfaces.DataSources;
+using Vidsnap.Core.Domain.Entities;
 
-namespace vidsnap.core.Gateways;
+namespace Vidsnap.Core.Gateways;
 
 internal class VideoGateway(IVideoDataSource dataSource)
 {

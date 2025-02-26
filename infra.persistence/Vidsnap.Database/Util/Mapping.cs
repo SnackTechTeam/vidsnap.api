@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using AutoMapper;
-using vidsnap.common.Dto.DataSource;
-using vidsnap.database.Entities;
+using Vidsnap.Common.Dto.DataSource;
+using Vidsnap.Database.Entities;
 
-namespace vidsnap.database.Util;
+namespace Vidsnap.Database.Util;
 
 [ExcludeFromCodeCoverage]
 public static class Mapping

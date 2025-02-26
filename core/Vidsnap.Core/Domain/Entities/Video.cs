@@ -1,4 +1,4 @@
-﻿namespace vidsnap.core.Domain.Entities;
+﻿namespace Vidsnap.Core.Domain.Entities;
 
 //TODO: Implementar os types
 internal class Video(

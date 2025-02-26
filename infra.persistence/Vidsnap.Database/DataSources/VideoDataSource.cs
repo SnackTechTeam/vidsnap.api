@@ -1,10 +1,10 @@
-﻿using vidsnap.common.Dto.DataSource;
-using vidsnap.common.Interfaces.DataSources;
-using vidsnap.database.Context;
-using vidsnap.database.Entities;
-using vidsnap.database.Util;
+﻿using Vidsnap.Common.Dto.DataSource;
+using Vidsnap.Common.Interfaces.DataSources;
+using Vidsnap.Database.Context;
+using Vidsnap.Database.Entities;
+using Vidsnap.Database.Util;
 
-namespace vidsnap.database.DataSources;
+namespace Vidsnap.Database.DataSources;
 
 public class VideoDataSource(RepositoryDbContext repositoryDbContext) : IVideoDataSource
 {

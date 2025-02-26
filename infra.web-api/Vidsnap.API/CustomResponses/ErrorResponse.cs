@@ -1,4 +1,4 @@
-﻿namespace vidsnap.api.CustomResponses;
+﻿namespace Vidsnap.API.CustomResponses;
 
 public record ErrorResponse(string Message, ExceptionResponse? Exception);
 

@@ -1,11 +1,11 @@
-﻿using vidsnap.common.Dto.Api;
-using vidsnap.common.Dto.DataSource;
-using vidsnap.common.Interfaces.DataSources;
-using vidsnap.core.Gateways;
-using vidsnap.core.Interfaces;
-using vidsnap.core.UseCases;
+﻿using Vidsnap.Common.Dto.Api;
+using Vidsnap.Common.Dto.DataSource;
+using Vidsnap.Common.Interfaces.DataSources;
+using Vidsnap.Core.Gateways;
+using Vidsnap.Core.Interfaces;
+using Vidsnap.Core.UseCases;
 
-namespace vidsnap.core.Controllers;
+namespace Vidsnap.Core.Controllers;
 
 public class VideoUploaderController(IVideoDataSource videoDataSource) : IVideoUploaderController
 {

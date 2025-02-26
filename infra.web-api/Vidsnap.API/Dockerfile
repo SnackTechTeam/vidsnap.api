@@ -12,19 +12,19 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["vidsnap.api/vidsnap.api.csproj", "vidsnap.api/"]
-RUN dotnet restore "./vidsnap.api/vidsnap.api.csproj"
+COPY ["Vidsnap.API/Vidsnap.API.csproj", "Vidsnap.API/"]
+RUN dotnet restore "./Vidsnap.API/Vidsnap.API.csproj"
 COPY . .
-WORKDIR "/src/vidsnap.api"
-RUN dotnet build "./vidsnap.api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Vidsnap.API"
+RUN dotnet build "./Vidsnap.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./vidsnap.api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Vidsnap.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "vidsnap.api.dll"]
+ENTRYPOINT ["dotnet", "Vidsnap.API.dll"]

@@ -1,6 +1,6 @@
-@vidsnap.api_HostAddress = http://localhost:5253
+@Vidsnap.API_HostAddress = http://localhost:5253
 
-GET {{vidsnap.api_HostAddress}}/weatherforecast/
+GET {{Vidsnap.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

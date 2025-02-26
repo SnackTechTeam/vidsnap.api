@@ -1,4 +1,4 @@
-﻿namespace vidsnap.common.Dto.DataSource;
+﻿namespace Vidsnap.Common.Dto.DataSource;
 
 public class VideoDto
 {

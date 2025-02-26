@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\common\Vidsnap.Common\vidsnap.common.csproj" />
-    <ProjectReference Include="..\..\core\Vidsnap.Core\vidsnap.core.csproj" />
+    <ProjectReference Include="..\..\common\Vidsnap.Common\Vidsnap.Common.csproj" />
+    <ProjectReference Include="..\..\core\Vidsnap.Core\Vidsnap.Core.csproj" />
   </ItemGroup>
 
 </Project>

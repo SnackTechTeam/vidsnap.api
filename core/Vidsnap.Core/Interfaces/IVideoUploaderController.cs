@@ -1,7 +1,7 @@
-﻿using vidsnap.common.Dto.Api;
-using vidsnap.common.Dto.DataSource;
+﻿using Vidsnap.Common.Dto.Api;
+using Vidsnap.Common.Dto.DataSource;
 
-namespace vidsnap.core.Interfaces;
+namespace Vidsnap.Core.Interfaces;
 
 public interface IVideoUploaderController
 {

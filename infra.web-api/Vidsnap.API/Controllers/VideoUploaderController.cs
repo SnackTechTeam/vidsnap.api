@@ -1,10 +1,10 @@
 ﻿using System.Net.Mime;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
-using vidsnap.common.Dto.Api;
-using vidsnap.core.Interfaces;
+using Vidsnap.Common.Dto.Api;
+using Vidsnap.Core.Interfaces;
 
-namespace vidsnap.api.Controllers;
+namespace Vidsnap.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
