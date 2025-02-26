@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+#CustomTestFiles
+TestCover
+*.info
+report
+
+#VsCode
+.vscode/
+
 # User-specific files
 *.rsuser
 *.suo
@@ -361,3 +369,16 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Rider directories
+.idea/
+.idea_modules/
+
+# Rider project files
+*.sln.iml
+
+# Arquivos relacionados a testes
+src/merged.cobertura.xml
+**/*.feature.cs
+/src/coverageReport
+.sonarqube/*

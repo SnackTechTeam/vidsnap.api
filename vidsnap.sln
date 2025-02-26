@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidsnap.API", "infra.web-api\vidsnap.api\Vidsnap.API.csproj", "{2B04E449-1158-401D-9DC1-BF32D2AC65CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vidsnap.api", "src\infra.web-api\vidsnap.api\vidsnap.api.csproj", "{2B04E449-1158-401D-9DC1-BF32D2AC65CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,15 +14,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra.web-api", "infra.web-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C7C2E7F2-0386-4642-9126-9A54F29F73EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidsnap.Common", "common\Vidsnap.Common\Vidsnap.Common.csproj", "{E6FB7C8F-798F-497E-8EAF-277878E426D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidsnap.Common", "src\common\Vidsnap.Common\Vidsnap.Common.csproj", "{E6FB7C8F-798F-497E-8EAF-277878E426D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidsnap.Core", "core\Vidsnap.Core\Vidsnap.Core.csproj", "{EAC67EFA-F57F-468E-944C-6C7A2457BB7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vidsnap.core", "src\core\Vidsnap.Core\vidsnap.core.csproj", "{EAC67EFA-F57F-468E-944C-6C7A2457BB7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{8A3D24F4-FB37-44A7-8643-CB49C5CE0980}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra.persistence", "infra.persistence", "{C4990A2F-6F29-4D14-9CD4-85939916AC8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidsnap.Database", "infra.persistence\Vidsnap.Database\Vidsnap.Database.csproj", "{59E501C0-BC1F-459A-8841-E42769B9EB9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vidsnap.database", "src\infra.persistence\Vidsnap.Database\vidsnap.database.csproj", "{59E501C0-BC1F-459A-8841-E42769B9EB9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
